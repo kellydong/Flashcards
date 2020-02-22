@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-T9-iSU">
-                                <rect key="frame" x="54" y="266" width="306" height="243"/>
+                                <rect key="frame" x="56" y="206" width="306" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePW-Re-aZN">
@@ -42,13 +42,44 @@
                                     <outletCollection property="gestureRecognizers" destination="TXF-X6-4id" appends="YES" id="IMo-Gj-U3Q"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkU-de-3cp">
+                                <rect key="frame" x="52" y="522" width="306" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Rio de Janeiro"/>
+                                <connections>
+                                    <action selector="didTapA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLS-AR-tCG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdP-9O-gey">
+                                <rect key="frame" x="52" y="602" width="306" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Brasilia"/>
+                                <connections>
+                                    <action selector="didTapB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69T-y4-132"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXL-kP-IFI">
+                                <rect key="frame" x="52" y="681" width="306" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sao Paulo"/>
+                                <connections>
+                                    <action selector="didTapC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipG-PP-O3W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="answerA" destination="pkU-de-3cp" id="jG8-RF-tBD"/>
+                        <outlet property="answerB" destination="QdP-9O-gey" id="P8g-2t-7hA"/>
+                        <outlet property="answerC" destination="rXL-kP-IFI" id="BCU-Hi-eW5"/>
                         <outlet property="backLabel" destination="ePW-Re-aZN" id="qVy-lX-Gfv"/>
+                        <outlet property="card" destination="EHg-T9-iSU" id="CIE-DK-Eul"/>
                         <outlet property="frontLabel" destination="DJa-89-yBg" id="iuO-cH-93Y"/>
                     </connections>
                 </viewController>
