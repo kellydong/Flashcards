@@ -18,10 +18,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerB: UIButton!
     @IBOutlet weak var answerC: UIButton!
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Get the new view controller using segue.destination.
+    // Pass the selected object to the new view controller.
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
+        //creationController.questionTextField.text = frontLabel.text
+        //creationController.answerTextField.text = backLabel.text
+        if segue.identifier == "EditSegue"{
+            creationController.initialQuestion = frontLabel.text
+            creationController.initialAnswer = backLabel.text
+        }
+
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+            
         backLabel.layer.cornerRadius = 20.0
         frontLabel.layer.cornerRadius = 20.0
         backLabel.clipsToBounds = true
@@ -49,6 +64,14 @@ class ViewController: UIViewController {
         else {
         frontLabel.isHidden = true
         }
+    }
+    
+    func updateFlashcard(question: String, answer: String, choice1: String, choice2: String, choice3: String){
+        self.frontLabel.text = question
+        self.backLabel.text = answer
+        self.answerA.setTitle(choice1, for: .normal)
+        self.answerB.setTitle(choice2, for: .normal)
+        self.answerC.setTitle(choice3, for: .normal)
     }
     
     @IBAction func didTapA(_ sender: Any) {
