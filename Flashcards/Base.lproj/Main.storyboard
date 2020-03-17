@@ -87,6 +87,22 @@
                                     <segue destination="6l6-4R-Bc1" kind="show" identifier="EditSegue" id="R0z-9W-dnC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOs-8R-zQH">
+                                <rect key="frame" x="56" y="806" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zup-al-jWe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-Bn-Fdd">
+                                <rect key="frame" x="313" y="801" width="49" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWI-ID-R6d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -99,6 +115,8 @@
                         <outlet property="backLabel" destination="ePW-Re-aZN" id="qVy-lX-Gfv"/>
                         <outlet property="card" destination="EHg-T9-iSU" id="CIE-DK-Eul"/>
                         <outlet property="frontLabel" destination="DJa-89-yBg" id="iuO-cH-93Y"/>
+                        <outlet property="nextButton" destination="9wP-Bn-Fdd" id="Ver-1i-jBb"/>
+                        <outlet property="prevButton" destination="fOs-8R-zQH" id="7Uv-FE-OX2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,9 +14,9 @@
             filePath = "Flashcards/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "didTapB(_:)"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "didTapC(_:)"
             landmarkType = "7">
             <Actions>
                <BreakpointActionProxy
@@ -38,10 +38,10 @@
             filePath = "Flashcards/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "didTapA(_:)"
-            landmarkType = "7">
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -54,9 +54,9 @@
             filePath = "Flashcards/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "updateFlashcard(question:answer:choice1:choice2:choice3:)"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "didTapA(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -70,10 +70,10 @@
             filePath = "Flashcards/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "didTapA(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -86,9 +86,9 @@
             filePath = "Flashcards/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "updateFlashcard(question:answer:choice1:choice2:choice3:)"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "didTapA(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
